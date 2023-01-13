@@ -12,10 +12,10 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     // https://github.com/huntersofbook/huntersofbook/tree/main/packages/naive-ui-nuxt
-    '@huntersofbook/naive-ui-nuxt',
+    '@huntersofbook/naive-ui-nuxt'
   ],
   build: {
-    transpile: ['@headlessui/vue'],
+    transpile: ['@headlessui/vue']
   },
   unocss: {
     uno: false,
@@ -25,21 +25,20 @@ export default defineNuxtConfig({
       presetIcons({
         scale: 1.2,
         extraProperties: {
-          display: 'inline-block',
-        },
-      }),
+          display: 'inline-block'
+        }
+      })
     ],
-    safelist: ['i-twemoji-flag-us-outlying-islands', 'i-twemoji-flag-turkey'],
+    safelist: ['i-twemoji-flag-us-outlying-islands', 'i-twemoji-flag-turkey']
   },
-
   // localization - i18n config
   i18n: {
     locales: [
       {
         code: 'en',
-        file: 'en-US.json',
+        file: 'en-US.json'
       },
-      { code: 'tr', file: 'tr-TR.json' },
+      { code: 'tr', file: 'tr-TR.json' }
     ],
     defaultLocale: 'tr',
     lazy: true,
@@ -48,30 +47,29 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      redirectOn: 'root', // recommended
+      redirectOn: 'root' // recommended
     },
     vueI18n: {
       legacy: false,
       locale: 'tr',
       fallbackLocale: 'tr',
-      availableLocales: ['en', 'tr'],
-    },
+      availableLocales: ['en', 'tr']
+    }
   },
-
   typescript: {
     tsConfig: {
       compilerOptions: {
         strict: true,
-        types: ['@pinia/nuxt', './type.d.ts'],
-      },
-    },
+        types: ['@pinia/nuxt', './type.d.ts']
+      }
+    }
   },
   colorMode: {
     classSuffix: '',
     fallback: 'light',
-    storageKey: 'color-mode',
+    storageKey: 'color-mode'
   },
   vite: {
-    logLevel: 'info',
-  },
+    logLevel: 'info'
+  }
 })

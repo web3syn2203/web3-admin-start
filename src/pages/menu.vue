@@ -11,9 +11,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
             class="inline-flex w-full justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
           >
             Options
-            <UnoIcon
-              class="i-ic-round-menu text-white-200 hover:text-white-100 -mr-1k ml-2 text-lg"
-            />
+            <UnoIcon class="i-ic-round-menu text-white-200 hover:text-white-100 -mr-1k ml-2 text-lg" />
           </MenuButton>
         </div>
 
@@ -32,26 +30,18 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
               <MenuItem v-slot="{ active }">
                 <button
                   class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  :class="[
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  ]"
+                  :class="[active ? 'bg-violet-500 text-white' : 'text-gray-900']"
                 >
-                  <UnoIcon
-                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400"
-                  />
+                  <UnoIcon class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
                   Edit
                 </button>
               </MenuItem>
               <MenuItem v-slot="{ active }">
                 <button
                   class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  :class="[
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  ]"
+                  :class="[active ? 'bg-violet-500 text-white' : 'text-gray-900']"
                 >
-                  <UnoIcon
-                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400"
-                  />
+                  <UnoIcon class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
                   Duplicate
                 </button>
               </MenuItem>
@@ -60,26 +50,18 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
               <MenuItem v-slot="{ active }">
                 <button
                   class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  :class="[
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  ]"
+                  :class="[active ? 'bg-violet-500 text-white' : 'text-gray-900']"
                 >
-                  <UnoIcon
-                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400"
-                  />
+                  <UnoIcon class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
                   Archive
                 </button>
               </MenuItem>
               <MenuItem v-slot="{ active }">
                 <button
                   class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  :class="[
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  ]"
+                  :class="[active ? 'bg-violet-500 text-white' : 'text-gray-900']"
                 >
-                  <UnoIcon
-                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400"
-                  />
+                  <UnoIcon class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
                   Move
                 </button>
               </MenuItem>
@@ -89,13 +71,9 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
               <MenuItem v-slot="{ active }">
                 <button
                   class="group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                  :class="[
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
-                  ]"
+                  :class="[active ? 'bg-violet-500 text-white' : 'text-gray-900']"
                 >
-                  <UnoIcon
-                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400"
-                  />
+                  <UnoIcon class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
                   Delete
                 </button>
               </MenuItem>
